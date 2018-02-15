@@ -163,13 +163,15 @@
                     <connections>
                         <outlet property="emailDividerView" destination="77i-pj-5zm" id="frs-KR-Afj"/>
                         <outlet property="emailTextField" destination="pPS-DK-M72" id="OFB-r9-isJ"/>
+                        <outlet property="emailValidationImage" destination="aWE-kt-lVI" id="6Fq-UR-xNr"/>
                         <outlet property="passwordDividerView" destination="2Wr-I4-nPt" id="Nms-dE-mt9"/>
                         <outlet property="passwordTextField" destination="tDc-ca-Ici" id="r30-gJ-BAq"/>
+                        <outlet property="passwordValidationImage" destination="gNo-tH-YNY" id="nDt-sV-WM7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fx3-UJ-a9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1481" y="34"/>
+            <point key="canvasLocation" x="986" y="34"/>
         </scene>
     </scenes>
     <resources>

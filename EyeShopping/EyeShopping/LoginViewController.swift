@@ -13,6 +13,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailDividerView: LoginDivider!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordDividerView: LoginDivider!
+    @IBOutlet weak var emailValidationImage: UIImageView!
+    @IBOutlet weak var passwordValidationImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +37,12 @@ class LoginViewController: UIViewController {
         if (emailTextField.text?.validateEmail())! {
             let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
             emailDividerView.backgroundColor = defaultColor
+            emailValidationImage.image = UIImage(named:"valid_field")
         }
         else {
             let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
             emailDividerView.backgroundColor = redColor
+            emailValidationImage.image = UIImage(named:"invalid_field")
         }
     }
     
@@ -46,10 +50,12 @@ class LoginViewController: UIViewController {
         if (passwordTextField.text?.validatePassword())! {
             let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
             passwordDividerView.backgroundColor = defaultColor
+            passwordValidationImage.image = UIImage(named:"valid_field")
         }
         else {
             let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
             passwordDividerView.backgroundColor = redColor
+            passwordValidationImage.image = UIImage(named:"invalid_field")
         }
     }
     
