@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0F9E172034CCCF007379EA /* PaddingUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */; };
+		FA0F9E192034CFEE007379EA /* LoginDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F9E182034CFEE007379EA /* LoginDivider.swift */; };
+		FA4323CE2036343200175789 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4323CD2036343200175789 /* StringExtensions.swift */; };
+		FA6CCE05203375DB0037CD32 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCE04203375DB0037CD32 /* RoundButton.swift */; };
 		FAD11F7D203230DC00ABBC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F7C203230DC00ABBC05 /* AppDelegate.swift */; };
 		FAD11F7F203230DC00ABBC05 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD11F7E203230DC00ABBC05 /* art.scnassets */; };
 		FAD11F81203230DC00ABBC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F80203230DC00ABBC05 /* ViewController.swift */; };
@@ -15,6 +19,7 @@
 		FAD11F89203230DC00ABBC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD11F87203230DC00ABBC05 /* LaunchScreen.storyboard */; };
 		FAD11F94203230DC00ABBC05 /* EyeShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F93203230DC00ABBC05 /* EyeShoppingTests.swift */; };
 		FAD11F9F203230DC00ABBC05 /* EyeShoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F9E203230DC00ABBC05 /* EyeShoppingUITests.swift */; };
+		FAD11FAD203231EA00ABBC05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11FAC203231EA00ABBC05 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingUITextField.swift; sourceTree = "<group>"; };
+		FA0F9E182034CFEE007379EA /* LoginDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDivider.swift; sourceTree = "<group>"; };
+		FA4323CD2036343200175789 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		FA6CCE04203375DB0037CD32 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FAD11F79203230DC00ABBC05 /* EyeShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD11F7C203230DC00ABBC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD11F7E203230DC00ABBC05 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		FAD11F9A203230DC00ABBC05 /* EyeShoppingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeShoppingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD11F9E203230DC00ABBC05 /* EyeShoppingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeShoppingUITests.swift; sourceTree = "<group>"; };
 		FAD11FA0203230DC00ABBC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD11FAC203231EA00ABBC05 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,11 @@
 				FAD11F85203230DC00ABBC05 /* Assets.xcassets */,
 				FAD11F87203230DC00ABBC05 /* LaunchScreen.storyboard */,
 				FAD11F8A203230DC00ABBC05 /* Info.plist */,
+				FAD11FAC203231EA00ABBC05 /* LoginViewController.swift */,
+				FA6CCE04203375DB0037CD32 /* RoundButton.swift */,
+				FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */,
+				FA0F9E182034CFEE007379EA /* LoginDivider.swift */,
+				FA4323CD2036343200175789 /* StringExtensions.swift */,
 			);
 			path = EyeShopping;
 			sourceTree = "<group>";
@@ -263,6 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6CCE05203375DB0037CD32 /* RoundButton.swift in Sources */,
+				FA0F9E172034CCCF007379EA /* PaddingUITextField.swift in Sources */,
+				FAD11FAD203231EA00ABBC05 /* LoginViewController.swift in Sources */,
+				FA4323CE2036343200175789 /* StringExtensions.swift in Sources */,
+				FA0F9E192034CFEE007379EA /* LoginDivider.swift in Sources */,
 				FAD11F81203230DC00ABBC05 /* ViewController.swift in Sources */,
 				FAD11F7D203230DC00ABBC05 /* AppDelegate.swift in Sources */,
 			);
@@ -431,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4287UTTY7;
 				INFOPLIST_FILE = EyeShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.EyeShopping;
@@ -445,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4287UTTY7;
 				INFOPLIST_FILE = EyeShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.EyeShopping;
