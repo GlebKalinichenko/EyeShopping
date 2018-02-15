@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol LoginView: class {
+    func showErrorValidation(isEmail: Bool)
+    func showSuccessValidation(isEmail: Bool)
+}
+
 class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var emailDividerView: LoginDivider!
@@ -15,9 +20,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordDividerView: LoginDivider!
     @IBOutlet weak var emailValidationImage: UIImageView!
     @IBOutlet weak var passwordValidationImage: UIImageView!
+    fileprivate var presenter = LoginPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.attachView(view: self)
         // Do any additional setup after loading the view.
     }
 
@@ -27,10 +34,12 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onChangeEmailAction(_ sender: Any) {
-        validateEmail()
+        presenter.validateEmail(email: emailTextField.text!)
+        //validateEmail()
     }
     @IBAction func onChangePasswordAction(_ sender: Any) {
-        validatePassword()
+        presenter.validatePassword(password: passwordTextField.text!)
+        //validatePassword()
     }
     
     private func validateEmail() {
@@ -70,4 +79,37 @@ class LoginViewController: UIViewController {
     }
     */
 
+}
+
+extension LoginViewController: LoginView {
+    
+    func showErrorValidation(isEmail: Bool) {
+        if (isEmail) {
+            let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
+            emailDividerView.backgroundColor = redColor
+            emailValidationImage.image = UIImage(named:"invalid_field")
+            return
+        }
+        
+        let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
+        passwordDividerView.backgroundColor = redColor
+        passwordValidationImage.image = UIImage(named:"invalid_field")
+    }
+    
+    func showSuccessValidation(isEmail: Bool) {
+        if (isEmail) {
+            let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
+            emailDividerView.backgroundColor = defaultColor
+            emailValidationImage.image = UIImage(named:"valid_field")
+            return
+        }
+        
+        let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
+        passwordDividerView.backgroundColor = defaultColor
+        passwordValidationImage.image = UIImage(named:"valid_field")
+        
+        
+    }
+    
+    
 }

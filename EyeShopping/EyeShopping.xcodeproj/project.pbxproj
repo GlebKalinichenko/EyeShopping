@@ -10,6 +10,7 @@
 		FA0F9E172034CCCF007379EA /* PaddingUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */; };
 		FA0F9E192034CFEE007379EA /* LoginDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F9E182034CFEE007379EA /* LoginDivider.swift */; };
 		FA4323CE2036343200175789 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4323CD2036343200175789 /* StringExtensions.swift */; };
+		FA4323D02036413600175789 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4323CF2036413600175789 /* LoginPresenter.swift */; };
 		FA6CCE05203375DB0037CD32 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCE04203375DB0037CD32 /* RoundButton.swift */; };
 		FAD11F7D203230DC00ABBC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F7C203230DC00ABBC05 /* AppDelegate.swift */; };
 		FAD11F7F203230DC00ABBC05 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD11F7E203230DC00ABBC05 /* art.scnassets */; };
@@ -43,6 +44,7 @@
 		FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingUITextField.swift; sourceTree = "<group>"; };
 		FA0F9E182034CFEE007379EA /* LoginDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDivider.swift; sourceTree = "<group>"; };
 		FA4323CD2036343200175789 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		FA4323CF2036413600175789 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		FA6CCE04203375DB0037CD32 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FAD11F79203230DC00ABBC05 /* EyeShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD11F7C203230DC00ABBC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */,
 				FA0F9E182034CFEE007379EA /* LoginDivider.swift */,
 				FA4323CD2036343200175789 /* StringExtensions.swift */,
+				FA4323CF2036413600175789 /* LoginPresenter.swift */,
 			);
 			path = EyeShopping;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4323D02036413600175789 /* LoginPresenter.swift in Sources */,
 				FA6CCE05203375DB0037CD32 /* RoundButton.swift in Sources */,
 				FA0F9E172034CCCF007379EA /* PaddingUITextField.swift in Sources */,
 				FAD11FAD203231EA00ABBC05 /* LoginViewController.swift in Sources */,
