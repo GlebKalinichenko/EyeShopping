@@ -10,7 +10,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet var emailDividerView: UIView!
+    @IBOutlet weak var emailDividerView: LoginDivider!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordDividerView: LoginDivider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +25,33 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onChangeEmailAction(_ sender: Any) {
-        if (emailTextField.text?.validateEmail())! {
-            return
-        }
-        
-        
+        validateEmail()
+    }
+    @IBAction func onChangePasswordAction(_ sender: Any) {
+        validatePassword()
     }
     
+    private func validateEmail() {
+        if (emailTextField.text?.validateEmail())! {
+            let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
+            emailDividerView.backgroundColor = defaultColor
+        }
+        else {
+            let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
+            emailDividerView.backgroundColor = redColor
+        }
+    }
+    
+    private func validatePassword() {
+        if (passwordTextField.text?.validatePassword())! {
+            let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
+            passwordDividerView.backgroundColor = defaultColor
+        }
+        else {
+            let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
+            passwordDividerView.backgroundColor = redColor
+        }
+    }
     
 
     /*

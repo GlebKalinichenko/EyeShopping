@@ -14,4 +14,9 @@ extension String {
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPredicate.evaluate(with:self)
     }
+    
+    func validatePassword() -> Bool {
+        return self.count > 0
+    }
+
 }
