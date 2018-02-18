@@ -11,17 +11,28 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-
     @IBOutlet var sceneView: ARSCNView!
+    var planes: NSMutableDictionary?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupScene()
+    }
+    
+    func setupScene() {
         // Set the view's delegate
         sceneView.delegate = self
         
+        // A dictionary of all the current planes being rendered in the scene
+        planes = NSMutableDictionary()
+        
+        
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
+        
+        sceneView.showsStatistics = true
+        sceneView.autoenablesDefaultLighting = true
+        sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints] 
         
         // Create a new scene
         let scene = SCNScene(named: "art.scnassets/ship.scn")!
@@ -29,7 +40,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
     }
-    
+ 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
