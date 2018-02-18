@@ -88,6 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA315CCA2039969200977A0F /* login */ = {
+			isa = PBXGroup;
+			children = (
+				FAD11FAC203231EA00ABBC05 /* LoginViewController.swift */,
+				FA4323CF2036413600175789 /* LoginPresenter.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		FA315CCB203996A600977A0F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA4323CD2036343200175789 /* StringExtensions.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		FA315CCC203996DB00977A0F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FA6CCE04203375DB0037CD32 /* RoundButton.swift */,
+				FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */,
+				FA0F9E182034CFEE007379EA /* LoginDivider.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		FAD11F70203230DC00ABBC05 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +138,9 @@
 		FAD11F7B203230DC00ABBC05 /* EyeShopping */ = {
 			isa = PBXGroup;
 			children = (
+				FA315CCC203996DB00977A0F /* views */,
+				FA315CCB203996A600977A0F /* utils */,
+				FA315CCA2039969200977A0F /* login */,
 				FAD11F7C203230DC00ABBC05 /* AppDelegate.swift */,
 				FAD11F7E203230DC00ABBC05 /* art.scnassets */,
 				FAD11F80203230DC00ABBC05 /* ViewController.swift */,
@@ -118,12 +148,6 @@
 				FAD11F85203230DC00ABBC05 /* Assets.xcassets */,
 				FAD11F87203230DC00ABBC05 /* LaunchScreen.storyboard */,
 				FAD11F8A203230DC00ABBC05 /* Info.plist */,
-				FAD11FAC203231EA00ABBC05 /* LoginViewController.swift */,
-				FA6CCE04203375DB0037CD32 /* RoundButton.swift */,
-				FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */,
-				FA0F9E182034CFEE007379EA /* LoginDivider.swift */,
-				FA4323CD2036343200175789 /* StringExtensions.swift */,
-				FA4323CF2036413600175789 /* LoginPresenter.swift */,
 			);
 			path = EyeShopping;
 			sourceTree = "<group>";
@@ -457,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V4287UTTY7;
 				INFOPLIST_FILE = EyeShopping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.EyeShopping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,6 +497,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V4287UTTY7;
 				INFOPLIST_FILE = EyeShopping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.EyeShopping;
 				PRODUCT_NAME = "$(TARGET_NAME)";

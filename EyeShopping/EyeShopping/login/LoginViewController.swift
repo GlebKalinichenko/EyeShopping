@@ -22,10 +22,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordValidationImage: UIImageView!
     fileprivate var presenter = LoginPresenter()
     
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.attachView(view: self)
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
+        
+        if true {
+            topConstraint.constant = 90
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,37 +41,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func onChangeEmailAction(_ sender: Any) {
         presenter.validateEmail(email: emailTextField.text!)
-        //validateEmail()
     }
+    
     @IBAction func onChangePasswordAction(_ sender: Any) {
         presenter.validatePassword(password: passwordTextField.text!)
-        //validatePassword()
     }
     
-    private func validateEmail() {
-        if (emailTextField.text?.validateEmail())! {
-            let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
-            emailDividerView.backgroundColor = defaultColor
-            emailValidationImage.image = UIImage(named:"valid_field")
-        }
-        else {
-            let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
-            emailDividerView.backgroundColor = redColor
-            emailValidationImage.image = UIImage(named:"invalid_field")
-        }
-    }
-    
-    private func validatePassword() {
-        if (passwordTextField.text?.validatePassword())! {
-            let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
-            passwordDividerView.backgroundColor = defaultColor
-            passwordValidationImage.image = UIImage(named:"valid_field")
-        }
-        else {
-            let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
-            passwordDividerView.backgroundColor = redColor
-            passwordValidationImage.image = UIImage(named:"invalid_field")
-        }
+    @IBAction func onLoginClick(_ sender: Any) {
+        performSegue(withIdentifier: "ItemsDetectorIdentifier", sender: self)
     }
     
 
@@ -107,8 +90,6 @@ extension LoginViewController: LoginView {
         let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
         passwordDividerView.backgroundColor = defaultColor
         passwordValidationImage.image = UIImage(named:"valid_field")
-        
-        
     }
     
     
