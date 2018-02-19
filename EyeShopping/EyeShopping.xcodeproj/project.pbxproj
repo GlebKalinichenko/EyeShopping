@@ -21,6 +21,9 @@
 		FAD11F94203230DC00ABBC05 /* EyeShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F93203230DC00ABBC05 /* EyeShoppingTests.swift */; };
 		FAD11F9F203230DC00ABBC05 /* EyeShoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F9E203230DC00ABBC05 /* EyeShoppingUITests.swift */; };
 		FAD11FAD203231EA00ABBC05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11FAC203231EA00ABBC05 /* LoginViewController.swift */; };
+		FADD092B203B57D600CACC1A /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FADD092A203B57D600CACC1A /* Models.scnassets */; };
+		FAE97B4F2039E44F0063DA18 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE97B4E2039E44F0063DA18 /* Plane.swift */; };
+		FAE97B51203A0E800063DA18 /* tron_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = FAE97B50203A0E800063DA18 /* tron_grid.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		FAD11F9E203230DC00ABBC05 /* EyeShoppingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeShoppingUITests.swift; sourceTree = "<group>"; };
 		FAD11FA0203230DC00ABBC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD11FAC203231EA00ABBC05 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FADD092A203B57D600CACC1A /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		FAE97B4E2039E44F0063DA18 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		FAE97B50203A0E800063DA18 /* tron_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tron_grid.png; path = "../../../../../Downloads/arkit-by-example-part2/arkit-by-example/tron_grid.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 		FAD11F7B203230DC00ABBC05 /* EyeShopping */ = {
 			isa = PBXGroup;
 			children = (
+				FAE97B50203A0E800063DA18 /* tron_grid.png */,
 				FA315CCC203996DB00977A0F /* views */,
 				FA315CCB203996A600977A0F /* utils */,
 				FA315CCA2039969200977A0F /* login */,
@@ -148,6 +155,8 @@
 				FAD11F85203230DC00ABBC05 /* Assets.xcassets */,
 				FAD11F87203230DC00ABBC05 /* LaunchScreen.storyboard */,
 				FAD11F8A203230DC00ABBC05 /* Info.plist */,
+				FAE97B4E2039E44F0063DA18 /* Plane.swift */,
+				FADD092A203B57D600CACC1A /* Models.scnassets */,
 			);
 			path = EyeShopping;
 			sourceTree = "<group>";
@@ -280,7 +289,9 @@
 				FAD11F7F203230DC00ABBC05 /* art.scnassets in Resources */,
 				FAD11F89203230DC00ABBC05 /* LaunchScreen.storyboard in Resources */,
 				FAD11F86203230DC00ABBC05 /* Assets.xcassets in Resources */,
+				FADD092B203B57D600CACC1A /* Models.scnassets in Resources */,
 				FAD11F84203230DC00ABBC05 /* Main.storyboard in Resources */,
+				FAE97B51203A0E800063DA18 /* tron_grid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4323D02036413600175789 /* LoginPresenter.swift in Sources */,
+				FAE97B4F2039E44F0063DA18 /* Plane.swift in Sources */,
 				FA6CCE05203375DB0037CD32 /* RoundButton.swift in Sources */,
 				FA0F9E172034CCCF007379EA /* PaddingUITextField.swift in Sources */,
 				FAD11FAD203231EA00ABBC05 /* LoginViewController.swift in Sources */,

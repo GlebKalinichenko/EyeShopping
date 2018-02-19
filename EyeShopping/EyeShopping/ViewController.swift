@@ -40,15 +40,21 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
     }
+    
+    func setupSession() {
+        var config = ARWorldTrackingConfiguration()
+        config.planeDetection = ARWorldTrackingConfiguration.PlaneDetection.horizontal
+        sceneView.session.run(config)
+    }
  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        setupSession()
         // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
+        //let configuration = ARWorldTrackingConfiguration()
 
         // Run the view's session
-        sceneView.session.run(configuration)
+        //sceneView.session.run(configuration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -73,6 +79,44 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         return node
     }
 */
+    
+    /**
+     Called when a new node has been mapped to the given anchor.
+     
+     @param renderer The renderer that will render the scene.
+     @param node The node that maps to the anchor.
+     @param anchor The added anchor.
+     */
+    /*- (void)renderer:(id <SCNSceneRenderer>)renderer didAddNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
+    if (![anchor isKindOfClass:[ARPlaneAnchor class]]) {
+    return;
+    }
+    
+    // When a new plane is detected we create a new SceneKit plane to visualize it in 3D
+    Plane *plane = [[Plane alloc] initWithAnchor: (ARPlaneAnchor *)anchor];
+    [self.planes setObject:plane forKey:anchor.identifier];
+    [node addChildNode:plane];
+    }*/
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        /*if let arPlaneAnchor = anchor as? [ARPlaneAnchor] {
+            var plane = Plane()
+            plane.initWithAnchor(anchor: anchor as! ARPlaneAnchor)
+            planes?.setObject(plane, forKey: anchor.identifier as NSCopying)
+            node.addChildNode(plane)
+        }*/
+        
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+        /*if let plane: Plane = planes?.object(forKey: anchor.identifier) as! Plane {
+            plane.updatePlane(anchor: anchor as! ARPlaneAnchor)
+        }*/
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor: ARAnchor) {
+        planes?.removeObject(forKey: anchor.identifier)
+    }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
