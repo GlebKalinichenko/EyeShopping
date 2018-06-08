@@ -7,19 +7,22 @@
 //
 
 import UIKit
+import Alamofire
 
 protocol LoginView: class {
-    func showErrorValidation(isEmail: Bool)
-    func showSuccessValidation(isEmail: Bool)
+    func showErrorValidation(type: LoginType)
+    func showSuccessValidation(type: LoginType)
 }
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var emailDividerView: LoginDivider!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordDividerView: LoginDivider!
     @IBOutlet weak var emailValidationImage: UIImageView!
     @IBOutlet weak var passwordValidationImage: UIImageView!
+    @IBOutlet var firstNameTextField: UITextField!
+    @IBOutlet var lastNameTextField: UITextField!
     fileprivate var presenter = LoginPresenter()
     
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
@@ -27,11 +30,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.attachView(view: self)
-        // Do any additional setup after loading the view
         
-        if true {
-            topConstraint.constant = 90
-        }
+        emailTextField.delegate = self as! UITextFieldDelegate
+        passwordTextField.delegate = self as! UITextFieldDelegate
+        firstNameTextField.delegate = self as! UITextFieldDelegate
+        lastNameTextField.delegate = self as! UITextFieldDelegate
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,7 +51,15 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLoginClick(_ sender: Any) {
-        performSegue(withIdentifier: "ItemsDetectorIdentifier", sender: self)
+        if let email = self.emailTextField.text, let password = self.passwordTextField.text, let firstName = self.firstNameTextField.text,
+            let lastName = self.lastNameTextField.text {
+            //presenter.onSignInClick(firstName: firstName, lastName: lastName, email: email, password: password)
+            //performSegue(withIdentifier: "ItemsDetectorIdentifier", sender: self)
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return textField.endEditing(false)
     }
     
 
@@ -66,30 +77,44 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginView {
     
-    func showErrorValidation(isEmail: Bool) {
-        if (isEmail) {
+    func showErrorValidation(type: LoginType) {
+        if (type == LoginType.email) {
             let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
             emailDividerView.backgroundColor = redColor
             emailValidationImage.image = UIImage(named:"invalid_field")
             return
         }
         
-        let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
-        passwordDividerView.backgroundColor = redColor
-        passwordValidationImage.image = UIImage(named:"invalid_field")
+        if (type == LoginType.password) {
+            let redColor = UIColor(red: 253/255, green: 100/255, blue: 85/255, alpha: 1)
+            passwordDividerView.backgroundColor = redColor
+            passwordValidationImage.image = UIImage(named:"invalid_field")
+            return
+        }
     }
     
-    func showSuccessValidation(isEmail: Bool) {
-        if (isEmail) {
+    func showSuccessValidation(type: LoginType) {
+        if (type == LoginType.email) {
             let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
             emailDividerView.backgroundColor = defaultColor
             emailValidationImage.image = UIImage(named:"valid_field")
             return
         }
         
-        let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
-        passwordDividerView.backgroundColor = defaultColor
-        passwordValidationImage.image = UIImage(named:"valid_field")
+        if (type == LoginType.password) {
+            let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
+            passwordDividerView.backgroundColor = defaultColor
+            passwordValidationImage.image = UIImage(named:"valid_field")
+            return
+        }
+        
+        if (type == LoginType.firstName) {
+            let defaultColor = UIColor(red: 130/255, green: 150/255, blue: 163/255, alpha: 1)
+            passwordDividerView.backgroundColor = defaultColor
+            passwordValidationImage.image = UIImage(named:"valid_field")
+            return
+        }
+    
     }
     
     

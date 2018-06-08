@@ -7,7 +7,25 @@
 		<key>EyeShopping.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FAD11F78203230DC00ABBC05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAD11F8E203230DC00ABBC05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAD11F99203230DC00ABBC05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

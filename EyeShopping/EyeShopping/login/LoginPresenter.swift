@@ -8,9 +8,15 @@
 
 import Foundation
 
+protocol LoginPresenterProtocol {
+    func onSignInClick(firstName: String, lastName: String,
+                       email: String, password: String)
+}
+
 class LoginPresenter {
     
     fileprivate var view: LoginView?
+    fileprivate var dataSource = LoginDataSource()
     
     func attachView(view: LoginView?) {
         self.view = view
@@ -18,19 +24,29 @@ class LoginPresenter {
     
     func validateEmail(email: String) {
         if (email.validateEmail()) {
-            view?.showSuccessValidation(isEmail: true)
+            view?.showSuccessValidation(type: LoginType.email)
             return
         }
         
-        view?.showErrorValidation(isEmail: true)
+        view?.showErrorValidation(type: LoginType.email)
     }
     
     func validatePassword(password: String) {
-        if (password.validatePassword()) {
-            view?.showSuccessValidation(isEmail: false)
+        if (password.notNull()) {
+            view?.showSuccessValidation(type: LoginType.password)
             return
         }
         
-        view?.showErrorValidation(isEmail: false)
+        view?.showErrorValidation(type: LoginType.password)
+    }
+    
+    func validateFirstName(firstName: String) {
+        if (firstName.notNull()) {
+            view?.showSuccessValidation(type: LoginType.password)
+        }
+    }
+    
+    func onSignInClick(firstName: String, lastName: String, email: String, password: String) {
+        dataSource.login(firstName: firstName, lastName: lastName, email: email, password: password)
     }
 }

@@ -7,11 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DA5520B733B64E6E8BADD13 /* Pods_EyeShopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A217977BA8DADE347B73DF /* Pods_EyeShopping.framework */; };
+		FA00843020CA897F005B94D7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA00842F20CA897F005B94D7 /* MenuViewController.swift */; };
+		FA00843220CA8F40005B94D7 /* TypeSingletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA00843120CA8F40005B94D7 /* TypeSingletion.swift */; };
+		FA04F55520950B5E004B427C /* LoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04F55420950B5E004B427C /* LoginType.swift */; };
 		FA0F9E172034CCCF007379EA /* PaddingUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */; };
 		FA0F9E192034CFEE007379EA /* LoginDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F9E182034CFEE007379EA /* LoginDivider.swift */; };
+		FA13B9D120AF50AF00423A4A /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B9D020AF50AF00423A4A /* ProductViewController.swift */; };
+		FA13B9D320AF50EA00423A4A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B9D220AF50EA00423A4A /* Item.swift */; };
+		FA13B9D520AF553B00423A4A /* ProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B9D420AF553B00423A4A /* ProductPresenter.swift */; };
+		FA13B9D720AF556200423A4A /* ProductDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B9D620AF556200423A4A /* ProductDataSource.swift */; };
+		FA13B9DA20AF58E600423A4A /* AllProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B9D920AF58E600423A4A /* AllProductViewController.swift */; };
+		FA13B9DC20AF5AA400423A4A /* AllProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B9DB20AF5AA400423A4A /* AllProductPresenter.swift */; };
+		FA13B9DE20AF5B9B00423A4A /* AllItemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B9DD20AF5B9B00423A4A /* AllItemsDataSource.swift */; };
+		FA249D0020AF170F007714D0 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA249CFF20AF170F007714D0 /* StorageViewController.swift */; };
+		FA249D0320AF1873007714D0 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA249D0220AF1873007714D0 /* Store.swift */; };
+		FA249D0520AF1C84007714D0 /* StoragePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA249D0420AF1C84007714D0 /* StoragePresenter.swift */; };
+		FA249D0920AF1D45007714D0 /* StorageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA249D0820AF1D45007714D0 /* StorageDataSource.swift */; };
 		FA4323CE2036343200175789 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4323CD2036343200175789 /* StringExtensions.swift */; };
 		FA4323D02036413600175789 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4323CF2036413600175789 /* LoginPresenter.swift */; };
+		FA6536EF2044A2A800EB5DA3 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6536EE2044A2A800EB5DA3 /* ItemsViewController.swift */; };
 		FA6CCE05203375DB0037CD32 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCE04203375DB0037CD32 /* RoundButton.swift */; };
+		FA6F581620CA4A63002A8443 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F581520CA4A63002A8443 /* ItemsTableViewCell.swift */; };
+		FAA95B7120CA40C900F61C0C /* StoreCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA95B7020CA40C900F61C0C /* StoreCellTableViewCell.swift */; };
+		FAB3B89F208FD1CD00644BCB /* LoginDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB3B89E208FD1CD00644BCB /* LoginDataSource.swift */; };
 		FAD11F7D203230DC00ABBC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F7C203230DC00ABBC05 /* AppDelegate.swift */; };
 		FAD11F7F203230DC00ABBC05 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD11F7E203230DC00ABBC05 /* art.scnassets */; };
 		FAD11F81203230DC00ABBC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F80203230DC00ABBC05 /* ViewController.swift */; };
@@ -22,6 +41,8 @@
 		FAD11F9F203230DC00ABBC05 /* EyeShoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11F9E203230DC00ABBC05 /* EyeShoppingUITests.swift */; };
 		FAD11FAD203231EA00ABBC05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD11FAC203231EA00ABBC05 /* LoginViewController.swift */; };
 		FADD092B203B57D600CACC1A /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FADD092A203B57D600CACC1A /* Models.scnassets */; };
+		FADEC05820CAA8BA00DDC0F8 /* DirectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEC05720CAA8BA00DDC0F8 /* DirectViewController.swift */; };
+		FADEC05B20CAAADB00DDC0F8 /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADEC05A20CAAADB00DDC0F8 /* NavigationTableViewController.swift */; };
 		FAE97B4F2039E44F0063DA18 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE97B4E2039E44F0063DA18 /* Plane.swift */; };
 		FAE97B51203A0E800063DA18 /* tron_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = FAE97B50203A0E800063DA18 /* tron_grid.png */; };
 /* End PBXBuildFile section */
@@ -44,11 +65,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51A217977BA8DADE347B73DF /* Pods_EyeShopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyeShopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B4C0A26F1389CC45396B85 /* Pods-EyeShopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeShopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-EyeShopping/Pods-EyeShopping.release.xcconfig"; sourceTree = "<group>"; };
+		CE7FD9F77D60812A25E6D07B /* Pods-EyeShopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeShopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EyeShopping/Pods-EyeShopping.debug.xcconfig"; sourceTree = "<group>"; };
+		FA00842F20CA897F005B94D7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FA00843120CA8F40005B94D7 /* TypeSingletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSingletion.swift; sourceTree = "<group>"; };
+		FA04F55420950B5E004B427C /* LoginType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginType.swift; sourceTree = "<group>"; };
 		FA0F9E162034CCCF007379EA /* PaddingUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingUITextField.swift; sourceTree = "<group>"; };
 		FA0F9E182034CFEE007379EA /* LoginDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDivider.swift; sourceTree = "<group>"; };
+		FA13B9D020AF50AF00423A4A /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		FA13B9D220AF50EA00423A4A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FA13B9D420AF553B00423A4A /* ProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenter.swift; sourceTree = "<group>"; };
+		FA13B9D620AF556200423A4A /* ProductDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataSource.swift; sourceTree = "<group>"; };
+		FA13B9D920AF58E600423A4A /* AllProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductViewController.swift; sourceTree = "<group>"; };
+		FA13B9DB20AF5AA400423A4A /* AllProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductPresenter.swift; sourceTree = "<group>"; };
+		FA13B9DD20AF5B9B00423A4A /* AllItemsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemsDataSource.swift; sourceTree = "<group>"; };
+		FA249CFF20AF170F007714D0 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
+		FA249D0220AF1873007714D0 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		FA249D0420AF1C84007714D0 /* StoragePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePresenter.swift; sourceTree = "<group>"; };
+		FA249D0820AF1D45007714D0 /* StorageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDataSource.swift; sourceTree = "<group>"; };
 		FA4323CD2036343200175789 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		FA4323CF2036413600175789 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		FA6536EE2044A2A800EB5DA3 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		FA6CCE04203375DB0037CD32 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		FA6F581520CA4A63002A8443 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
+		FAA95B7020CA40C900F61C0C /* StoreCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCellTableViewCell.swift; sourceTree = "<group>"; };
+		FAB3B89E208FD1CD00644BCB /* LoginDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataSource.swift; sourceTree = "<group>"; };
 		FAD11F79203230DC00ABBC05 /* EyeShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD11F7C203230DC00ABBC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD11F7E203230DC00ABBC05 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -65,6 +107,8 @@
 		FAD11FA0203230DC00ABBC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD11FAC203231EA00ABBC05 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FADD092A203B57D600CACC1A /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		FADEC05720CAA8BA00DDC0F8 /* DirectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectViewController.swift; sourceTree = "<group>"; };
+		FADEC05A20CAAADB00DDC0F8 /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewController.swift; sourceTree = "<group>"; };
 		FAE97B4E2039E44F0063DA18 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		FAE97B50203A0E800063DA18 /* tron_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tron_grid.png; path = "../../../../../Downloads/arkit-by-example-part2/arkit-by-example/tron_grid.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA5520B733B64E6E8BADD13 /* Pods_EyeShopping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +139,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5714D393D3949C12D7C8E08D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51A217977BA8DADE347B73DF /* Pods_EyeShopping.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AC3097B0445FFEEEB6A6A66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FD9F77D60812A25E6D07B /* Pods-EyeShopping.debug.xcconfig */,
+				C9B4C0A26F1389CC45396B85 /* Pods-EyeShopping.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA13B9CF20AF509A00423A4A /* product */ = {
+			isa = PBXGroup;
+			children = (
+				FA13B9D020AF50AF00423A4A /* ProductViewController.swift */,
+				FA13B9D420AF553B00423A4A /* ProductPresenter.swift */,
+				FA13B9D620AF556200423A4A /* ProductDataSource.swift */,
+			);
+			path = product;
+			sourceTree = "<group>";
+		};
+		FA13B9D820AF58CC00423A4A /* allproduct */ = {
+			isa = PBXGroup;
+			children = (
+				FA13B9D920AF58E600423A4A /* AllProductViewController.swift */,
+				FA13B9DB20AF5AA400423A4A /* AllProductPresenter.swift */,
+				FA13B9DD20AF5B9B00423A4A /* AllItemsDataSource.swift */,
+			);
+			path = allproduct;
+			sourceTree = "<group>";
+		};
+		FA249CFE20AF16DD007714D0 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				FA249CFF20AF170F007714D0 /* StorageViewController.swift */,
+				FA249D0420AF1C84007714D0 /* StoragePresenter.swift */,
+				FA249D0820AF1D45007714D0 /* StorageDataSource.swift */,
+			);
+			path = storage;
+			sourceTree = "<group>";
+		};
+		FA249D0120AF1865007714D0 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				FA249D0220AF1873007714D0 /* Store.swift */,
+				FA13B9D220AF50EA00423A4A /* Item.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
 		FA315CCA2039969200977A0F /* login */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				FA4323CD2036343200175789 /* StringExtensions.swift */,
+				FA04F55420950B5E004B427C /* LoginType.swift */,
+				FA00843120CA8F40005B94D7 /* TypeSingletion.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -121,6 +224,23 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		FAA95B6F20CA408000F61C0C /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAA95B7020CA40C900F61C0C /* StoreCellTableViewCell.swift */,
+				FA6F581520CA4A63002A8443 /* ItemsTableViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		FAB3B89D208FD1AF00644BCB /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				FAB3B89E208FD1CD00644BCB /* LoginDataSource.swift */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
 		FAD11F70203230DC00ABBC05 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +248,8 @@
 				FAD11F92203230DC00ABBC05 /* EyeShoppingTests */,
 				FAD11F9D203230DC00ABBC05 /* EyeShoppingUITests */,
 				FAD11F7A203230DC00ABBC05 /* Products */,
+				5AC3097B0445FFEEEB6A6A66 /* Pods */,
+				5714D393D3949C12D7C8E08D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,7 +266,15 @@
 		FAD11F7B203230DC00ABBC05 /* EyeShopping */ = {
 			isa = PBXGroup;
 			children = (
-				FAE97B50203A0E800063DA18 /* tron_grid.png */,
+				FADEC05920CAAAC300DDC0F8 /* navigation */,
+				FADEC05620CAA8A600DDC0F8 /* direct */,
+				FAA95B6F20CA408000F61C0C /* cells */,
+				FA13B9D820AF58CC00423A4A /* allproduct */,
+				FA13B9CF20AF509A00423A4A /* product */,
+				FA249D0120AF1865007714D0 /* entity */,
+				FA249CFE20AF16DD007714D0 /* storage */,
+				FAE97B4E2039E44F0063DA18 /* Plane.swift */,
+				FAB3B89D208FD1AF00644BCB /* datasource */,
 				FA315CCC203996DB00977A0F /* views */,
 				FA315CCB203996A600977A0F /* utils */,
 				FA315CCA2039969200977A0F /* login */,
@@ -155,8 +285,10 @@
 				FAD11F85203230DC00ABBC05 /* Assets.xcassets */,
 				FAD11F87203230DC00ABBC05 /* LaunchScreen.storyboard */,
 				FAD11F8A203230DC00ABBC05 /* Info.plist */,
-				FAE97B4E2039E44F0063DA18 /* Plane.swift */,
+				FAE97B50203A0E800063DA18 /* tron_grid.png */,
 				FADD092A203B57D600CACC1A /* Models.scnassets */,
+				FA6536EE2044A2A800EB5DA3 /* ItemsViewController.swift */,
+				FA00842F20CA897F005B94D7 /* MenuViewController.swift */,
 			);
 			path = EyeShopping;
 			sourceTree = "<group>";
@@ -179,6 +311,22 @@
 			path = EyeShoppingUITests;
 			sourceTree = "<group>";
 		};
+		FADEC05620CAA8A600DDC0F8 /* direct */ = {
+			isa = PBXGroup;
+			children = (
+				FADEC05720CAA8BA00DDC0F8 /* DirectViewController.swift */,
+			);
+			path = direct;
+			sourceTree = "<group>";
+		};
+		FADEC05920CAAAC300DDC0F8 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FADEC05A20CAAADB00DDC0F8 /* NavigationTableViewController.swift */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD11FA3203230DC00ABBC05 /* Build configuration list for PBXNativeTarget "EyeShopping" */;
 			buildPhases = (
+				321877E8FB733FDA8FE6387C /* [CP] Check Pods Manifest.lock */,
 				FAD11F75203230DC00ABBC05 /* Sources */,
 				FAD11F76203230DC00ABBC05 /* Frameworks */,
 				FAD11F77203230DC00ABBC05 /* Resources */,
+				986DD152D1E30C902477AECF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,19 +461,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		321877E8FB733FDA8FE6387C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EyeShopping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		986DD152D1E30C902477AECF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EyeShopping/Pods-EyeShopping-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EyeShopping/Pods-EyeShopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAD11F75203230DC00ABBC05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FA4323D02036413600175789 /* LoginPresenter.swift in Sources */,
+				FA04F55520950B5E004B427C /* LoginType.swift in Sources */,
+				FA249D0920AF1D45007714D0 /* StorageDataSource.swift in Sources */,
+				FA249D0020AF170F007714D0 /* StorageViewController.swift in Sources */,
+				FA13B9D120AF50AF00423A4A /* ProductViewController.swift in Sources */,
+				FA6F581620CA4A63002A8443 /* ItemsTableViewCell.swift in Sources */,
+				FA13B9D720AF556200423A4A /* ProductDataSource.swift in Sources */,
+				FA00843020CA897F005B94D7 /* MenuViewController.swift in Sources */,
+				FA13B9DC20AF5AA400423A4A /* AllProductPresenter.swift in Sources */,
+				FA00843220CA8F40005B94D7 /* TypeSingletion.swift in Sources */,
+				FAA95B7120CA40C900F61C0C /* StoreCellTableViewCell.swift in Sources */,
 				FAE97B4F2039E44F0063DA18 /* Plane.swift in Sources */,
+				FAB3B89F208FD1CD00644BCB /* LoginDataSource.swift in Sources */,
 				FA6CCE05203375DB0037CD32 /* RoundButton.swift in Sources */,
 				FA0F9E172034CCCF007379EA /* PaddingUITextField.swift in Sources */,
+				FA13B9DA20AF58E600423A4A /* AllProductViewController.swift in Sources */,
+				FA249D0320AF1873007714D0 /* Store.swift in Sources */,
+				FA13B9D320AF50EA00423A4A /* Item.swift in Sources */,
+				FADEC05B20CAAADB00DDC0F8 /* NavigationTableViewController.swift in Sources */,
 				FAD11FAD203231EA00ABBC05 /* LoginViewController.swift in Sources */,
+				FA249D0520AF1C84007714D0 /* StoragePresenter.swift in Sources */,
+				FA13B9D520AF553B00423A4A /* ProductPresenter.swift in Sources */,
+				FA6536EF2044A2A800EB5DA3 /* ItemsViewController.swift in Sources */,
 				FA4323CE2036343200175789 /* StringExtensions.swift in Sources */,
+				FADEC05820CAA8BA00DDC0F8 /* DirectViewController.swift in Sources */,
 				FA0F9E192034CFEE007379EA /* LoginDivider.swift in Sources */,
 				FAD11F81203230DC00ABBC05 /* ViewController.swift in Sources */,
+				FA13B9DE20AF5B9B00423A4A /* AllItemsDataSource.swift in Sources */,
 				FAD11F7D203230DC00ABBC05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,10 +697,11 @@
 		};
 		FAD11FA4203230DC00ABBC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE7FD9F77D60812A25E6D07B /* Pods-EyeShopping.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V4287UTTY7;
+				DEVELOPMENT_TEAM = 3A42PGL7M3;
 				INFOPLIST_FILE = EyeShopping/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -504,10 +714,11 @@
 		};
 		FAD11FA5203230DC00ABBC05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B4C0A26F1389CC45396B85 /* Pods-EyeShopping.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V4287UTTY7;
+				DEVELOPMENT_TEAM = 3A42PGL7M3;
 				INFOPLIST_FILE = EyeShopping/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

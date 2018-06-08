@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FACFD812204878A4002467CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFD811204878A4002467CE /* AppDelegate.swift */; };
+		FACFD814204878A4002467CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFD813204878A4002467CE /* ViewController.swift */; };
+		FACFD817204878A4002467CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACFD815204878A4002467CE /* Main.storyboard */; };
+		FACFD81A204878A4002467CE /* Fuck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FACFD818204878A4002467CE /* Fuck.xcdatamodeld */; };
+		FACFD81C204878A4002467CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACFD81B204878A4002467CE /* Assets.xcassets */; };
+		FACFD81F204878A4002467CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACFD81D204878A4002467CE /* LaunchScreen.storyboard */; };
+		FACFD82A204878A4002467CE /* FuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFD829204878A4002467CE /* FuckTests.swift */; };
+		FACFD835204878A4002467CE /* FuckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFD834204878A4002467CE /* FuckUITests.swift */; };
+		FACFD84320487CCF002467CE /* BounceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFD84220487CCF002467CE /* BounceViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FACFD826204878A4002467CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACFD806204878A4002467CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACFD80D204878A4002467CE;
+			remoteInfo = Fuck;
+		};
+		FACFD831204878A4002467CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACFD806204878A4002467CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACFD80D204878A4002467CE;
+			remoteInfo = Fuck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FACFD80E204878A4002467CE /* Fuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACFD811204878A4002467CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FACFD813204878A4002467CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FACFD816204878A4002467CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FACFD819204878A4002467CE /* Fuck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fuck.xcdatamodel; sourceTree = "<group>"; };
+		FACFD81B204878A4002467CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACFD81E204878A4002467CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FACFD820204878A4002467CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACFD825204878A4002467CE /* FuckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACFD829204878A4002467CE /* FuckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckTests.swift; sourceTree = "<group>"; };
+		FACFD82B204878A4002467CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACFD830204878A4002467CE /* FuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACFD834204878A4002467CE /* FuckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckUITests.swift; sourceTree = "<group>"; };
+		FACFD836204878A4002467CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACFD84220487CCF002467CE /* BounceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FACFD80B204878A4002467CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACFD822204878A4002467CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACFD82D204878A4002467CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FACFD805204878A4002467CE = {
+			isa = PBXGroup;
+			children = (
+				FACFD810204878A4002467CE /* Fuck */,
+				FACFD828204878A4002467CE /* FuckTests */,
+				FACFD833204878A4002467CE /* FuckUITests */,
+				FACFD80F204878A4002467CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FACFD80F204878A4002467CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FACFD80E204878A4002467CE /* Fuck.app */,
+				FACFD825204878A4002467CE /* FuckTests.xctest */,
+				FACFD830204878A4002467CE /* FuckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACFD810204878A4002467CE /* Fuck */ = {
+			isa = PBXGroup;
+			children = (
+				FACFD811204878A4002467CE /* AppDelegate.swift */,
+				FACFD813204878A4002467CE /* ViewController.swift */,
+				FACFD815204878A4002467CE /* Main.storyboard */,
+				FACFD81B204878A4002467CE /* Assets.xcassets */,
+				FACFD81D204878A4002467CE /* LaunchScreen.storyboard */,
+				FACFD820204878A4002467CE /* Info.plist */,
+				FACFD818204878A4002467CE /* Fuck.xcdatamodeld */,
+				FACFD84220487CCF002467CE /* BounceViewController.swift */,
+			);
+			path = Fuck;
+			sourceTree = "<group>";
+		};
+		FACFD828204878A4002467CE /* FuckTests */ = {
+			isa = PBXGroup;
+			children = (
+				FACFD829204878A4002467CE /* FuckTests.swift */,
+				FACFD82B204878A4002467CE /* Info.plist */,
+			);
+			path = FuckTests;
+			sourceTree = "<group>";
+		};
+		FACFD833204878A4002467CE /* FuckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FACFD834204878A4002467CE /* FuckUITests.swift */,
+				FACFD836204878A4002467CE /* Info.plist */,
+			);
+			path = FuckUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FACFD80D204878A4002467CE /* Fuck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACFD839204878A4002467CE /* Build configuration list for PBXNativeTarget "Fuck" */;
+			buildPhases = (
+				FACFD80A204878A4002467CE /* Sources */,
+				FACFD80B204878A4002467CE /* Frameworks */,
+				FACFD80C204878A4002467CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fuck;
+			productName = Fuck;
+			productReference = FACFD80E204878A4002467CE /* Fuck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FACFD824204878A4002467CE /* FuckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACFD83C204878A4002467CE /* Build configuration list for PBXNativeTarget "FuckTests" */;
+			buildPhases = (
+				FACFD821204878A4002467CE /* Sources */,
+				FACFD822204878A4002467CE /* Frameworks */,
+				FACFD823204878A4002467CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACFD827204878A4002467CE /* PBXTargetDependency */,
+			);
+			name = FuckTests;
+			productName = FuckTests;
+			productReference = FACFD825204878A4002467CE /* FuckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FACFD82F204878A4002467CE /* FuckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACFD83F204878A4002467CE /* Build configuration list for PBXNativeTarget "FuckUITests" */;
+			buildPhases = (
+				FACFD82C204878A4002467CE /* Sources */,
+				FACFD82D204878A4002467CE /* Frameworks */,
+				FACFD82E204878A4002467CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACFD832204878A4002467CE /* PBXTargetDependency */,
+			);
+			name = FuckUITests;
+			productName = FuckUITests;
+			productReference = FACFD830204878A4002467CE /* FuckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FACFD806204878A4002467CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Gleb Kalinichenko";
+				TargetAttributes = {
+					FACFD80D204878A4002467CE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FACFD824204878A4002467CE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FACFD80D204878A4002467CE;
+					};
+					FACFD82F204878A4002467CE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FACFD80D204878A4002467CE;
+					};
+				};
+			};
+			buildConfigurationList = FACFD809204878A4002467CE /* Build configuration list for PBXProject "Fuck" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FACFD805204878A4002467CE;
+			productRefGroup = FACFD80F204878A4002467CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FACFD80D204878A4002467CE /* Fuck */,
+				FACFD824204878A4002467CE /* FuckTests */,
+				FACFD82F204878A4002467CE /* FuckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FACFD80C204878A4002467CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACFD81F204878A4002467CE /* LaunchScreen.storyboard in Resources */,
+				FACFD81C204878A4002467CE /* Assets.xcassets in Resources */,
+				FACFD817204878A4002467CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACFD823204878A4002467CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACFD82E204878A4002467CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FACFD80A204878A4002467CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACFD84320487CCF002467CE /* BounceViewController.swift in Sources */,
+				FACFD81A204878A4002467CE /* Fuck.xcdatamodeld in Sources */,
+				FACFD814204878A4002467CE /* ViewController.swift in Sources */,
+				FACFD812204878A4002467CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACFD821204878A4002467CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACFD82A204878A4002467CE /* FuckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACFD82C204878A4002467CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACFD835204878A4002467CE /* FuckUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FACFD827204878A4002467CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACFD80D204878A4002467CE /* Fuck */;
+			targetProxy = FACFD826204878A4002467CE /* PBXContainerItemProxy */;
+		};
+		FACFD832204878A4002467CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACFD80D204878A4002467CE /* Fuck */;
+			targetProxy = FACFD831204878A4002467CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FACFD815204878A4002467CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACFD816204878A4002467CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FACFD81D204878A4002467CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACFD81E204878A4002467CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FACFD837204878A4002467CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FACFD838204878A4002467CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FACFD83A204878A4002467CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4287UTTY7;
+				INFOPLIST_FILE = Fuck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.Fuck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FACFD83B204878A4002467CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4287UTTY7;
+				INFOPLIST_FILE = Fuck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.Fuck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FACFD83D204878A4002467CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FuckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.FuckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuck.app/Fuck";
+			};
+			name = Debug;
+		};
+		FACFD83E204878A4002467CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FuckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.FuckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuck.app/Fuck";
+			};
+			name = Release;
+		};
+		FACFD840204878A4002467CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FuckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.FuckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fuck;
+			};
+			name = Debug;
+		};
+		FACFD841204878A4002467CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FuckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newsreviewer.FuckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fuck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FACFD809204878A4002467CE /* Build configuration list for PBXProject "Fuck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACFD837204878A4002467CE /* Debug */,
+				FACFD838204878A4002467CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACFD839204878A4002467CE /* Build configuration list for PBXNativeTarget "Fuck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACFD83A204878A4002467CE /* Debug */,
+				FACFD83B204878A4002467CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACFD83C204878A4002467CE /* Build configuration list for PBXNativeTarget "FuckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACFD83D204878A4002467CE /* Debug */,
+				FACFD83E204878A4002467CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACFD83F204878A4002467CE /* Build configuration list for PBXNativeTarget "FuckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACFD840204878A4002467CE /* Debug */,
+				FACFD841204878A4002467CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FACFD818204878A4002467CE /* Fuck.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FACFD819204878A4002467CE /* Fuck.xcdatamodel */,
+			);
+			currentVersion = FACFD819204878A4002467CE /* Fuck.xcdatamodel */;
+			path = Fuck.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FACFD806204878A4002467CE /* Project object */;
+}

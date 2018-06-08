@@ -1,0 +1,6 @@
+framework module Pods_EyeShopping {
+  umbrella header "Pods-EyeShopping-umbrella.h"
+
+  export *
+  module * { export * }
+}
