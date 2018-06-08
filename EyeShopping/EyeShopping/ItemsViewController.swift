@@ -69,11 +69,11 @@ class ItemsViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegat
     // Override to create and configure nodes for anchors added to the view's session.
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         
-        /*// If this is our anchor, create a node
+        // If this is our anchor, create a node
         if self.detectedDataAnchor?.identifier == anchor.identifier {
             
             // Create a 3D Cup to display
-            guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets/kettle") else {
+            guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets/cup") else {
                 return nil
             }
             
@@ -91,9 +91,9 @@ class ItemsViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegat
             return wrapperNode
         }
         
-        return nil*/
+        return nil
         
-        // Create a 3D Cup to display
+        /*// Create a 3D Cup to display
         guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets/cup") else {
             return nil
         }
@@ -109,7 +109,7 @@ class ItemsViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegat
         // Set its position based off the anchor
         wrapperNode.transform = SCNMatrix4(anchor.transform)
         
-        return wrapperNode
+        return wrapperNode*/
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {

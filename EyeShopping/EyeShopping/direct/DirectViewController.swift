@@ -15,10 +15,13 @@ class DirectViewController: UIViewController, ARSCNViewDelegate, ARSessionDelega
     @IBOutlet weak var sceneView: ARSCNView!
     var planes: NSMutableDictionary?
     var detectedDataAnchor: ARAnchor?
+    var movedObject: SCNNode?;
+    var initialHitTestResult: ARHitTestResult?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addTapGestureToSceneView()
+        addPanGestureToSceneView()
     }
     
     func setupScene() {
@@ -124,6 +127,67 @@ class DirectViewController: UIViewController, ARSCNViewDelegate, ARSessionDelega
     func addTapGestureToSceneView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DirectViewController.didTap(withGestureRecognizer:)))
         sceneView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    func addPanGestureToSceneView() {
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(DirectViewController.moveObject(withGestureRecognizer:)))
+        panGestureRecognizer.maximumNumberOfTouches = 1
+        panGestureRecognizer.minimumNumberOfTouches = 1
+        self.sceneView.addGestureRecognizer(panGestureRecognizer);
+    }
+    
+    @objc func moveObject(withGestureRecognizer recognizer: UIPanGestureRecognizer) {
+        moveAndDragARObject(withGestureRecognizer: recognizer)
+    }
+    
+    func moveAndDragARObject(withGestureRecognizer recognizer: UIPanGestureRecognizer) {
+        if (recognizer.state == UIGestureRecognizerState.began) {
+            var tapPoint = recognizer.location(in: sceneView)
+            var result = sceneView.hitTest(tapPoint, options: nil)
+            var hitResults = sceneView.hitTest(tapPoint, types: ARHitTestResult.ResultType.featurePoint)
+            
+            if (result.count == 0) {
+                return;
+            }
+            var hitResult = result.first
+            self.movedObject = hitResult?.node.parent
+            self.initialHitTestResult = hitResults.first
+        }
+        if (recognizer.state == UIGestureRecognizerState.changed) {
+            if ((movedObject) != nil) {
+                var tapPoint = recognizer.location(in: sceneView)
+                var hitResults = sceneView.hitTest(tapPoint, types: ARHitTestResult.ResultType.featurePoint)
+                var result = hitResults.last
+                
+                SCNTransaction.begin()
+                
+                guard let newInitialHitResult = self.initialHitTestResult else {return}
+                
+                var initialMatrix = SCNMatrix4(newInitialHitResult.worldTransform)
+                var initialVector = SCNVector3Make(initialMatrix.m41, initialMatrix.m42, initialMatrix.m43);
+                
+                guard let newResult = result else {return}
+                var matrix = SCNMatrix4(newResult.worldTransform);
+                var vector = SCNVector3Make(matrix.m41, matrix.m42, matrix.m43);
+                
+                var dx = vector.x - initialVector.x;
+                var dy = vector.y - initialVector.y;
+                var dz = vector.z - initialVector.z;
+                
+                var newPositionVector = SCNVector3Make(self.movedObject!.position.x+dx, (self.movedObject?.position.y)!+dy,
+                                                       self.movedObject!.position.z+dz);
+                
+                movedObject?.position = newPositionVector
+                
+                SCNTransaction.commit()
+                
+                self.initialHitTestResult = newResult;
+            }
+        }
+        if (recognizer.state == UIGestureRecognizerState.ended) {
+            self.movedObject = nil;
+            self.initialHitTestResult = nil;
+        }
     }
     
     @objc func didTap(withGestureRecognizer recognizer: UIGestureRecognizer) {
