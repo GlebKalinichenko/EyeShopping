@@ -22,6 +22,7 @@ class DirectViewController: UIViewController, ARSCNViewDelegate, ARSessionDelega
         super.viewDidLoad()
         addTapGestureToSceneView()
         addPanGestureToSceneView()
+        addScaleGestureToSceneView()
     }
     
     func setupScene() {
@@ -136,8 +137,50 @@ class DirectViewController: UIViewController, ARSCNViewDelegate, ARSessionDelega
         self.sceneView.addGestureRecognizer(panGestureRecognizer);
     }
     
+    func addScaleGestureToSceneView() {
+        let tapGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(DirectViewController.scaleObject(withGestureRecognizer:)))
+        sceneView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
     @objc func moveObject(withGestureRecognizer recognizer: UIPanGestureRecognizer) {
         moveAndDragARObject(withGestureRecognizer: recognizer)
+    }
+    
+    @objc func scaleObject(withGestureRecognizer recognizer: UIPinchGestureRecognizer) {
+        scaleARObject(withGestureRecognizer: recognizer)
+    }
+    
+    func scaleARObject(withGestureRecognizer recognizer: UIPinchGestureRecognizer) {
+        if (recognizer.state == UIGestureRecognizerState.began) {
+            var tapPoint = recognizer.location(ofTouch: 1, in: sceneView)
+            var result = sceneView.hitTest(tapPoint, options: nil)
+            if (result.count == 0) {
+                tapPoint = recognizer.location(ofTouch: 0, in: sceneView)
+                result = sceneView.hitTest(tapPoint, options: nil)
+                if (result.count == 0) {
+                    return;
+                }
+            }
+            
+            var hitResult = result.first;
+            
+            guard let newHitResult = hitResult else {return}
+            self.movedObject = newHitResult.node.parent
+        }
+        
+        if (recognizer.state == UIGestureRecognizerState.changed) {
+            guard let newMovedObject = movedObject else {return}
+            
+            var pinchScaleX = recognizer.scale * CGFloat(newMovedObject.scale.x);
+            var pinchScaleY = recognizer.scale * CGFloat(newMovedObject.scale.y);
+            var pinchScaleZ = recognizer.scale * CGFloat(newMovedObject.scale.z);
+            movedObject?.scale = SCNVector3Make(Float(pinchScaleX), Float(pinchScaleY), Float(pinchScaleZ));
+        
+            recognizer.scale = 1;
+        }
+        if (recognizer.state == UIGestureRecognizerState.ended) {
+            self.movedObject = nil;
+        }
     }
     
     func moveAndDragARObject(withGestureRecognizer recognizer: UIPanGestureRecognizer) {
